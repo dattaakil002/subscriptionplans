@@ -1,0 +1,189 @@
+
+        [
+            {
+                "subscriptionType": "Basic",
+                "defaultPackageSelect": 1,
+                "plans": [
+                    {
+                        "amount": 24.99,
+                        "planType": "Weekly"
+                    },
+                    {
+                        "amount": 79.99,
+                        "planType": "Monthly"
+                    }
+                ],
+                "subCategory": [
+                    {
+                        "categoryName": "US Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "EU Football",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Horse Racing",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    }
+                ]
+            },
+
+            {
+                "subscriptionType": "Silver",
+                "defaultPackageSelect": 2,
+                "plans": [
+                    {
+                        "amount": 44.99,
+                        "planType": "Weekly"
+                    },
+                    {
+                        "amount": 139.99,
+                        "planType": "Monthly"
+                    }
+                ],
+                "subCategory": [
+                    {
+                        "categoryName": "US Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "EU Football",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Horse Racing",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    }
+                ]
+            },
+
+            {
+                "subscriptionType": "Gold",
+                "defaultPackageSelect": 3,
+                "plans": [
+                    {
+                        "amount": 59.99,
+                        "planType": "Weekly"
+                    },
+                    {
+                        "amount": 189.99,
+                        "planType": "Monthly"
+                    }
+                ],
+                "subCategory": [
+                    {
+                        "categoryName": "US Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "EU Football",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Horse Racing",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    }
+                ]
+            },
+
+            {
+                "subscriptionType": "Platinum",
+                "defaultPackageSelect": 4,
+                "plans": [
+                    {
+                        "amount": 69.99,
+                        "planType": "Weekly"
+                    },
+                    {
+                        "amount": 239.99,
+                        "planType": "Monthly"
+                    }
+                ],
+                "subCategory": [
+                    {
+                        "categoryName": "US Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "EU Football",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Horse Racing",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    }
+                ]
+            },
+
+            {
+                "subscriptionType": "Racing Ext",
+                "defaultPackageSelect": 1,
+                "plans": [
+                    {
+                        "amount": 13.99,
+                        "planType": "Weekly"
+                    },
+                    {
+                        "amount": 39.99,
+                        "planType": "Monthly"
+                    }
+                ],
+                "subCategory": [
+                    {
+                        "categoryName": "US Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Sports",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "EU Football",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    },
+                    {
+                        "categoryName": "AU Horse Racing",
+                        "Description": "NBA (National Basketball Association), MLS (Major League Soccer), MLB (Major League Baseball), NFL (National Football League), NHL (National Hockey League)",
+                        "categoryDesc": "(NBA, MLS, MLB, NFL, NHL)"
+                    }
+                ]
+            }
+            
+        ]
+    

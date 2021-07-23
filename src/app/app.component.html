@@ -1,0 +1,140 @@
+<div class="main-box">
+  <div class="design-box">
+    <header class="flex-space-box">
+      <div class="logo">
+        <a href="#">
+          <img src="../assets/images/logo.svg">
+        </a>
+      </div>
+      <div class="account-detail flex-space-box">
+        <div class="users-box flex-space-box">
+          <div class="user-thumb">
+            <img src="../assets/images/user.jpg">
+          </div>
+          <div class="user-name">Williams White</div>
+        </div>
+        <div class="button-box">
+          <button class="blue-button flex-space-box">Logout <img src="../assets/images/icon-logout.svg"></button>
+        </div>
+      </div>
+    </header>
+    <section class="title-box-top">
+      <h1 class="page-title"><b>Subscription Plans</b></h1>
+      <h2 class="x-small-title"><strong>You may choose the plans which will be best suited your requirements.</strong></h2>
+    </section>
+    <!-- <section class="main-plan-item current-plan">
+      <h2 class="title-small section-title"><strong>Your Current Plan</strong></h2>
+      <div class="plan-box highlight-border">
+        <div class="flex-space-box flex-align-top">
+          <div class="label-line"><span class="highlight-color">Weekly Subscription Plan |</span> Valid till 2nd Aug, 2020</div>
+          <img src="../images/checked-round-green.svg">
+        </div>
+        <h3 class="title"><b>Basic</b></h3>
+        <div class="flex-space-box flex-align-bottom">
+          <h4 class="x-small-title medium">US Sports Package</h4>
+          <span class="page-title"><strong>$24.99</strong></span>
+        </div>
+      </div>
+    </section> -->
+    <section class="plans-box">
+      <h2 class="title-small section-title"><strong>Subscription Plans</strong></h2>
+      <div id="accordion" class="accordion">
+        <div *ngFor="let subscriptionData of subscriptionDetails; let i = index" class="accordion-item plan-box">
+          <div class="card-header collapsed" data-toggle="collapse" [attr.data-target]="'#collapse' + i">
+            <div class="flex-space-box top-arrow-box">
+              <h3 class="title"><b>{{subscriptionData.subscriptionType}} <sub>(Any {{subscriptionData.defaultPackageSelect}} Full Packages)</sub></b></h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21.988" height="12.569" viewBox="0 0 21.988 12.569"><path id="Path_22845" data-name="Path 22845" d="M10.992,0A1.542,1.542,0,0,0,9.9.46L.453,9.927a1.549,1.549,0,0,0,2.191,2.19l8.35-8.376,8.348,8.372a1.549,1.549,0,1,0,2.195-2.187L12.093.455A1.537,1.537,0,0,0,11,0Z" fill="#232323"/></svg>
+            </div>
+          </div>
+          <div class="row">
+            <div *ngFor="let plan of subscriptionData.plans; let j = index" class="col-md-6">
+              <div class="general-check-box round">
+                <input #checkboxes type="checkbox" (change)="selectedsubscription(i,j)" name="" id="first-pla{{i}}-{{j}}">
+                <label for="first-pla{{i}}-{{j}}">${{plan.amount}} <sub>{{plan.planType}} Plan</sub></label>
+              </div>
+            </div>
+          </div>
+          <div id="collapse{{i}}" class="card-body collapse" data-parent="#accordion" >
+            <div id="subaccordion" class="accordion sub-accordion">
+              <div class="accordion-item" *ngFor="let subCategory of subscriptionData.subCategory; let k = index">
+                <div class="card-header collapsed" data-toggle="collapse" [attr.data-target]="'#collapse'+i+'-'+k">
+                  <div class="flex-space-box top-arrow-box">
+                    <div class="general-check-box with-no-label">
+                      <input #secondboxes type="checkbox" (change)="selectedsubCategory(i,k)" name="" id="second-pla{{i}}-{{k}}">
+                      <label for="second-pla{{i}}-{{k}}" class="title-small">{{subCategory.categoryName}}</label>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.988" height="12.569" viewBox="0 0 21.988 12.569"><path id="Path_22845" data-name="Path 22845" d="M10.992,0A1.542,1.542,0,0,0,9.9.46L.453,9.927a1.549,1.549,0,0,0,2.191,2.19l8.35-8.376,8.348,8.372a1.549,1.549,0,1,0,2.195-2.187L12.093.455A1.537,1.537,0,0,0,11,0Z" fill="#232323"/></svg>
+                  </div>
+                </div>
+                <div id="collapse{{i}}-{{k}}" class="card-body collapse" data-parent="#subaccordion" >
+                  <div class="sub-accordion-content">
+                    <p>{{subCategory.Description}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="no-padding-top">
+      <div class="plan-box gray-box">
+        <div class="flex-space-box flex-align-top">
+          <h3 class="title"><b>Basic</b> </h3>
+          <div>
+            <img src="../assets/images/cross-button.png">
+          </div>
+        </div>
+        <h4 class="x-small-title medium">You will get a discount of 33% on total amount.</h4>
+      </div>
+    </section> -->
+    <section *ngIf="viewSelectedDetails" class="main-plan-item current-plan">
+      <div class="plan-box highlight-border">
+        <div class="flex-space-box flex-align-top">
+          <h3 class="title"><b>{{subscriptionType}}({{planType}} Plan)</b></h3>
+          <span class="page-title"><strong>${{planAmount}}</strong></span>
+        </div>
+        <div *ngFor="let subcategory of subCategoryDetails" class="flex-space-box flex-align-bottom">
+          <h4  class="x-small-title medium" style="font-size: 15px;">{{subcategory.categoryName}}{{subcategory.categoryDesc}}</h4>
+        </div>
+      </div>
+    </section>
+
+    <section *ngIf="viewSelectedDetails" class="main-plan-item current-plan">
+      <div class="plan-box highlight-border">
+        <div class="flex-space-box flex-align-top">
+          <h3 class="title"><b>Total Amount</b></h3>
+          <span class="page-title"><strong>${{planAmount}}</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="action-btn">
+      <!-- <a href="#" class="blue-button medium-size-btn" data-toggle="modal" data-target="#largeModal">Proceed to Pay</a> -->
+      <a  class="blue-button medium-size-btn" (click)="proceedToPay()" data-toggle="modal" data-target="#largeModal"  >Proceed to Pay</a>
+    </section>
+  </div>
+  <div class="photo-box">
+    <img src="../assets/images/sidebar-panel.jpg">
+  </div>
+</div>
+<div class="modal fade" id="largeModal" *ngIf="viewPopUp" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg custom-modal-large">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="../assets/images/cross-button.png">
+      </button>
+      <div class="model-content-box">
+        <div class="side-image-box">
+          <img src="../assets/images/popup-side-image.png">
+        </div>
+        <div class="form-box text-center">
+          <img src="../assets/images/small-logo.svg">
+          <h3 class="title"><b>Subscription Success</b></h3>
+          <h4 class="x-small-title">You have successfully subscribed with ({{subscriptionType}}) ${{planAmount}} {{planType}} Plan</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->
